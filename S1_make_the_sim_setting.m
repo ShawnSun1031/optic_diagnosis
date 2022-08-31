@@ -4,19 +4,19 @@ Change the param of scalp, skull, CSF and GM, mus of WM = 3* GM
 Change mode to get high photons result --> ground 
 Change mode to get low photons result --> train
 
-Benjamin Kao
-Last update: 2020/12/01
+CS Sun
+Last update: 2022/08/31
 Version: 4.41
 %}
 
 clc;clear;close all;
 %% param
 model_folder='models'; % the folder of the models
-mode = ["ground","train"];  % [ground/train]
 target_name_arr={'ZJ'}; % the name of the model to simulate
-num_photon=[1E9,1E8]; % the number of photon
 num_SDS=7; % number of detectors
 layer_mus={[50:25:350],[50:37.5:350],[10 19 28 37],[50:60:350]}; % mus for each layer, 1/cm
+mode = ["ground","train"];  % [ground/train]
+num_photon=[1E9,1E8]; % the number of photon
 n=1.4;
 g=0.9;
 sim_version=4.41;
