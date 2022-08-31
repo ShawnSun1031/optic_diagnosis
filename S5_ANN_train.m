@@ -1,3 +1,13 @@
+%{
+Start to train ANN model
+Using 1~500 and 701~2808 as training data
+Using 501~600 as validation data
+Using 601~700 as testing data
+CS Sun
+Last update: 2022/08/31
+%}
+
+
 clear all
 data_input = load(fullfile('ANN_train/train.txt'));
 training_data_input = [data_input(1:500,:);data_input(701:2808,:)];
