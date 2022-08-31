@@ -1,3 +1,9 @@
+%{
+get the ANN training data and ground truth data
+CS Sun
+Last update: 2022/08/31
+%}
+
 clear all
 counts = zeros(2808,26);
 subject = "ZJ";
